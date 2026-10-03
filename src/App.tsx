@@ -14,6 +14,7 @@ import { DulhanPackageBuilder } from './components/DulhanPackageBuilder';
 import { GiftFinder } from './components/GiftFinder';
 import { ShubhMuhuratSection } from './components/ShubhMuhurat';
 import { HallmarkTrustSection } from './components/HallmarkTrust';
+import { GoogleStoreShowcase } from './components/GoogleStoreShowcase';
 import { OurStory } from './components/OurStory';
 import { Footer } from './components/Footer';
 import { StickyMobileBar } from './components/StickyMobileBar';
@@ -186,7 +187,13 @@ export default function App() {
           lang={lang}
         />
 
-        {/* 10. Our Story & Family Sarafa Heritage */}
+        {/* 10. Google Maps Verified Showroom & Store Photos */}
+        <GoogleStoreShowcase
+          settings={settings}
+          lang={lang}
+        />
+
+        {/* 11. Our Story & Family Sarafa Heritage */}
         <OurStory
           settings={settings}
           lang={lang}

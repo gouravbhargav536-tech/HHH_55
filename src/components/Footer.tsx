@@ -86,6 +86,11 @@ export const Footer: React.FC<FooterProps> = ({ settings, lang, onOpenAdmin }) =
                   {lang === 'hi' ? 'हॉलमार्क व HUID जांच' : 'Hallmark Verification'}
                 </a>
               </li>
+              <li>
+                <a href="#google-store" className="hover:text-[#E5C158] transition-colors flex items-center gap-1">
+                  <span>{lang === 'hi' ? 'दुकान फ़ोटो (Google Maps)' : 'Store Photos (Google)'}</span>
+                </a>
+              </li>
             </ul>
           </div>
 

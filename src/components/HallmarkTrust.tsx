@@ -1,6 +1,7 @@
 import React from 'react';
 import { Language, CustomerReview, FaqItem } from '../types';
 import { MandalaDivider } from './IndianMotifs';
+import { GoogleIcon } from './GoogleIcon';
 import { ShieldCheck, CheckCircle2, Star, Smartphone, Scale, FileText, ChevronDown } from 'lucide-react';
 
 interface HallmarkTrustProps {
@@ -150,6 +151,9 @@ export const HallmarkTrustSection: React.FC<HallmarkTrustProps> = ({ reviews, fa
         <div className="flex flex-wrap items-center justify-between gap-4 pb-4 border-b border-[#D4AF37]/20">
           <div>
             <div className="flex items-center gap-2">
+              <div className="w-8 h-8 rounded-lg bg-white border border-stone-200 shadow-2xs flex items-center justify-center shrink-0">
+                <GoogleIcon className="w-5 h-5" />
+              </div>
               <span className="text-2xl font-bold font-mono text-[#4A0E17]">4.9</span>
               <div className="flex text-amber-500">
                 {Array.from({ length: 5 }).map((_, i) => (
@@ -157,7 +161,7 @@ export const HallmarkTrustSection: React.FC<HallmarkTrustProps> = ({ reviews, fa
                 ))}
               </div>
               <span className="text-xs text-[#8A671C] font-semibold">
-                (Google Reviews · 180+ {lang === 'hi' ? 'समीक्षाएं' : 'reviews'})
+                (Google Reviews · 480+ {lang === 'hi' ? 'समीक्षाएं' : 'reviews'})
               </span>
             </div>
             <h3 className="font-heading text-lg font-bold text-[#4A0E17] mt-1">

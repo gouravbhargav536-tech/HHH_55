@@ -87,6 +87,9 @@ export const Navbar: React.FC<NavbarProps> = ({
           <a href="#trust" className="hover:text-[#B38622] transition-colors">
             {lang === 'hi' ? 'हॉलमार्क व शुद्धता' : 'Hallmark Trust'}
           </a>
+          <a href="#google-store" className="hover:text-[#B38622] transition-colors flex items-center gap-1 text-stone-700">
+            <span>{lang === 'hi' ? 'दुकान फ़ोटो (Google)' : 'Store Photos'}</span>
+          </a>
         </nav>
 
         {/* Right CTA cluster */}
