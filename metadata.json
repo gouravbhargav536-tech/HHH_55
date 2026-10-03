@@ -1,0 +1,8 @@
+{
+  "name": "Shri Laxmi Jewellers – Gold & Silver Rates",
+  "description": "Shri Laxmi Jewellers, Sri Madhopur (Rajasthan) - Live 24K, 22K, 18K gold and silver rates, transparent price calculation with making charges and GST, and handcrafted hallmarked jewellery.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

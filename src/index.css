@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: "Tiro Devanagari Hindi", "Rozha One", "Cinzel", serif;
+  --font-body: "Mukta", system-ui, sans-serif;
+  --font-english-serif: "Cinzel", Georgia, serif;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-body);
+    background-color: #FAF7F2;
+    color: #2D1E18;
+  }
+
+  h1, h2, h3, .font-heading {
+    font-family: var(--font-heading);
+  }
+}
+
+/* Jharokha Arch Shaped Mask for royal Indian jewellery frame */
+.jharokha-frame {
+  border-radius: 40% 40% 12px 12px / 25% 25% 12px 12px;
+  overflow: hidden;
+}
+
+.jharokha-arch {
+  clip-path: polygon(
+    0% 30%, 
+    10% 20%, 
+    25% 10%, 
+    50% 0%, 
+    75% 10%, 
+    90% 20%, 
+    100% 30%, 
+    100% 100%, 
+    0% 100%
+  );
+}
+
+/* Royal Paper texture subtle pattern */
+.bg-mandala-pattern {
+  background-color: #FAF7F2;
+  background-image: radial-gradient(#D4AF37 0.65px, transparent 0.65px), radial-gradient(#D4AF37 0.65px, #FAF7F2 0.65px);
+  background-size: 26px 26px;
+  background-position: 0 0, 13px 13px;
+  background-opacity: 0.15;
+}
+
+/* Print styling for Hisab Slip */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #hisab-print-area, #hisab-print-area * {
+    visibility: visible;
+  }
+  #hisab-print-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+}
+
